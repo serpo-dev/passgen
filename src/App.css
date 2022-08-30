@@ -1,0 +1,26 @@
+button {
+  background-color: red;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+container>* {
+  margin: 5px;
+}
+
+input {
+  margin-left: 20px;
+  margin-right: 20px;
+}
