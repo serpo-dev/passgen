@@ -1,28 +1,20 @@
-import { useSelector } from 'react-redux';
 import './App.css';
+
+import Preview from './components/Preview';
+import Content from './components/Content';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 
 function App() {
-  const random = useSelector(state => state.random)
-  console.log(random)
-  return (
-    <container>
-      <label>
-        <span>Alphabet symbols:</span>
-        <input type='checkbox' />
-        {`abcdefghijklmop...`}
-      </label>
-      <label>
-        <span>Special symbols:</span>
-        <input type='checkbox' />
-        {`!@#$%^&*()`}
-      </label>
-      <button>Generate a new password!</button>
-      <a href='https://unsplash.com/photos/P1vXpgpL208' target='_blank'>
-        Photo source
-      </a>
-    </container>
-  );
+    return (
+        <div>
+            <Preview />
+            <Content />
+            <FAQ />
+            <Footer />
+        </div>
+    );
 };
 
 export default App;

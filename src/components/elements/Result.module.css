@@ -1,0 +1,33 @@
+.scroll {
+    margin-top: 50px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 900px;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.result {
+    height: 40vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    resize: none;
+}
+
+.result::-webkit-scrollbar {
+    background-color: #EDEDED;  
+    width: 14px;
+    border-color: transparent;
+}
+
+.result::-webkit-scrollbar-corner   {
+    background: #EDEDED;  
+}
+
+.result::-webkit-scrollbar-thumb {
+    background-color: #949494;
+    border-radius: 20px;
+    border: 3px solid #EDEDED;
+}

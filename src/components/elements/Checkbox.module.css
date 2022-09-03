@@ -1,0 +1,94 @@
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scale: 1;
+    transition: scale 0.2s ease, padding-left 0.2s ease;
+}
+
+.container:hover {
+    scale: 1.1;
+    padding-left: 55px;
+    transition: scale 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    background-color: #eee;
+    box-shadow: inset 0px 3px 5px 0px #898989;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+.container .p {
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-left: 10px;
+}
+.container .p:hover {
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-left: 10px;
+    scale: 1.1;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: transparent;
+    box-shadow: inset 0px 4px 0px 0px transparent;
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    width: 25px;
+    height: 27px;
+    background-image: url('../../assets/checkbox.svg');
+    background-size: cover;
+    scale: 1.2;
+    animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}

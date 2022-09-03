@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import randomReducer from "./randomSlice";
+import dictionaryReducer from "./dictionarySlice";
+import optionsReducer from "./optionsSlice";
+import resultReducer from './resultSlice';
 
 
 const store = configureStore({
     reducer: {
-        random: randomReducer,
+        options: optionsReducer,
+        dictionary: dictionaryReducer,
+        result: resultReducer,
     },
 });
 

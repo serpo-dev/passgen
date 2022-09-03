@@ -1,0 +1,112 @@
+.FAQ {
+    height: 1080px;
+    width: 100%;
+    background-color: #5A5A5A;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr; 
+    justify-items: end;
+}
+
+.dividing {
+    width: 30px;
+    margin-right: 30px;
+    height: 200px;
+    border-right: 5px solid white;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    place-items: center;
+    width: fit-content;
+}
+
+.first h2 {
+    text-align: end;
+    width: 22vw;
+}
+
+.first p {
+    text-align: start;
+    width: 28vw;
+}
+
+.second {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: start;
+    place-items: center;
+    width: fit-content;
+}
+
+.second h2 {
+    text-align: start;
+    width: 22vw;
+}
+
+.second p {
+    text-align: end;
+    width: 28vw;
+}
+
+.FAQ h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.FAQ p {
+    font-size: 20px;
+    color: white;
+}
+
+.FAQ img {
+    align-self: end;
+    max-width: 30vw;
+}
+
+@media screen and (max-width: 1000px)  {
+    .FAQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.first {
+    align-self: center;
+}
+
+.second {
+    margin-top: 80px;
+    align-self: center;
+}
+
+.FAQ img {
+    margin-top: 100px;
+}
+
+.FAQ h2 {
+    font-size: 22px;
+}
+
+.FAQ p{
+    font-size: 18px;
+}
+
+.second h2 {
+    width: 24vw;
+}
+
+.second p {
+    width: 40vw;
+}
+
+.first h2 {
+    width: 24vw;
+}
+
+.first p {
+    width: 40vw;
+}
+}

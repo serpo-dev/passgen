@@ -1,0 +1,51 @@
+.container {
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.warning {
+    white-space: nowrap;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: red;
+    font-size: 500;
+    font-family: 'Inter';
+}
+
+.input {
+    margin-top: 14px;
+    height: 36px;
+    width: 184px;
+    box-shadow: inset 0px 3px 5px 0px #898989;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: #EDEDED;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    scale: 1;
+    transition: background-color 0.2s linear, scale 0.2s ease;
+}
+
+.input:focus {
+    cursor: text;
+    background-color: #D9D9D9;
+    scale: 1.1;
+    transition: background-color 0.2s linear,  scale 0.2s ease;
+}
+
+.label {
+    width: 184px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
