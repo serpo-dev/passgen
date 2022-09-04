@@ -1,0 +1,117 @@
+.startButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startButton p {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    color: #a89696;
+    scale: 1;
+    transition: scale ease 0.5s;
+}
+
+.startButton p:hover {
+    scale: 1.1;
+    transition: scale ease 0.5s;
+}
+
+.startButton p a {
+    font-size: 18px;
+    margin-left: 4px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #a87777;
+}
+
+.startButton p a:hover {
+    color: #ffffff;
+    transition: color ease 0.2s;
+}
+
+.startButton p a:active {
+    color: #645962;
+    transition: color ease 0.2s;
+}
+
+.startButton button:hover {
+    scale: 1.1;
+    color: #fff;
+    background-color: black;
+    transition: scale ease 0.5s, margin-left ease 0.5s, color ease 0.5s,
+        background-color ease 0.5s, color ease 0.2s;
+}
+
+.startButton button {
+    scale: 1;
+    margin-left: 0%;
+    margin-top: 150px;
+    width: 350px;
+    height: 80px;
+    border-radius: 45px;
+    border-width: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 32px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    color: #645962;
+    background-color: white;
+    animation: openStartButton 1.5s ease;
+    transition: scale ease 0.5s, margin-left ease 0.5s, color ease 0.5s,
+        background-color ease 0.5s;
+}
+
+.startButton p {
+    animation: openButtonDesc 2s ease;
+}
+
+@media screen and (min-width: 1500px) {
+    .startButton {
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1500px) {
+    .startButton {
+        margin-left: 7vw;
+    }
+}
+
+@keyframes openStartButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+}
+
+@keyframes openButtonDesc {
+    0% {
+        opacity: 0;
+        transform: translateY(-3vh);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(-3vh);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+}

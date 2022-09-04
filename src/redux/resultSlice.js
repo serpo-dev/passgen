@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     value: [],
@@ -11,7 +11,7 @@ export const resultSlice = createSlice({
         cR: (state, action) => {
             state.value = action.payload;
         },
-        rR: (state) => {
+        rR: state => {
             state.value = [];
         },
     },

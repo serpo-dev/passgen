@@ -1,243 +1,136 @@
 .preview {
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .previewBg {
-  height: 0;
-  width: 100%;
+    height: 0;
+    width: 100%;
 }
 
 .previewBg div {
-  height: 1080px;
-  width: 100%;
-  filter: brightness(40%);
-  background-size: cover;
-  background-position: 70%;
-  background-repeat: no-repeat;
-  background-image: url('../assets/einstein.svg');
-  animation: bgGettingDark 1s ease-in-out;
+    height: 1080px;
+    width: 100%;
+    filter: brightness(40%);
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-image: url('../assets/einstein.svg');
+    animation: bgGettingDark 1s ease-in-out;
 }
 
 @keyframes bgGettingDark {
-  0% {
-    filter: brightness(100%);
-  }
+    0% {
+        filter: brightness(100%);
+    }
 
-  60% {
-    filter: brightness(100%);
-  }
+    60% {
+        filter: brightness(100%);
+    }
 
-  100% {
-    filter: brightness(40%);
-  }
+    100% {
+        filter: brightness(40%);
+    }
 }
 
 .preview {
-  height: 1080px;
-  width: 100%;
+    height: 1080px;
+    width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  animation: openPreview 0.5s ease
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    animation: openPreview 0.5s ease;
 }
 
 @keyframes openPreview {
-  0% {
-    opacity: 0;
-    transform: translateX(-30vw);
-  }
+    0% {
+        opacity: 0;
+        transform: translateX(-30vw);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (min-width: 1500px) {
-  .mainText img {
-    margin-top: 16vh;
-    margin-left: 10vw;
-    width: 60vh;
-  }
+    .mainText img {
+        margin-top: 16vh;
+        margin-left: 10vw;
+        width: 60vh;
+    }
 
-  .startButton {
-    margin-left: 10vw;
-  }
-
-  .preview {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+    .preview {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1500px) {
-  .mainText img {
-    margin-top: 16vh;
-    margin-left: 7vw;
-    width: 30vw;
-  }
+    .mainText img {
+        margin-top: 16vh;
+        margin-left: 7vw;
+        width: 30vw;
+    }
 
-  .startButton {
-    margin-left: 7vw;
-  }
-
-  .preview {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+    .preview {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .mainText img {
-    margin-top: 5vh;
-    max-width: 80vw;
-  }
+    .mainText img {
+        margin-top: 5vh;
+        max-width: 80vw;
+    }
 
-  .preview {
-    align-items: center;
-  }
+    .preview {
+        align-items: center;
+    }
+
+    .previewContent {
+        margin-top: 10vh;
+        scale: 0.8;
+    }
 }
 
 .mainText {
-  opacity: 0.8;
-  scale: 1;
-  animation: openMainText 1s ease;
-  transition: scale ease 0.5s, opacity ease 0.5s;
+    opacity: 0.8;
+    scale: 1;
+    animation: openMainText 1s ease;
+    transition: scale ease 0.5s, opacity ease 0.5s;
 }
 
 .mainText img {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .mainText:hover {
-  opacity: 1;
-  scale: 1.1;
-  transition: scale ease 0.5s, opacity ease 0.5s;
-}
-
-.startButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.startButton p {
-  font-size: 16px;
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 600;
-  color: #a89696;
-  scale: 1;
-  transition: scale ease 0.5s;
-}
-
-.startButton p:hover {
-  scale: 1.1;
-  transition: scale ease 0.5s;
-}
-
-.startButton p a {
-  font-size: 18px;
-  margin-left: 4px;
-  font-weight: 800;
-  text-decoration: none;
-  color: #a87777;
-}
-
-.startButton p a:hover {
-  color: #ffffff;
-  transition: color ease 0.2s;
-}
-
-.startButton p a:active {
-  color: #645962;
-  transition: color ease 0.2s;
-}
-
-.startButton button:hover {
-  scale: 1.1;
-  color: #fff;
-  background-color: black;
-  transition: scale ease 0.5s, margin-left ease 0.5s, color ease 0.5s, background-color ease 0.5s, color ease 0.2s;
-}
-
-.startButton button {
-  scale: 1;
-  margin-left: 0%;
-  margin-top: 150px;
-  width: 350px;
-  height: 80px;
-  border-radius: 45px;
-  border-width: 0;
-  opacity: 0.7;
-  cursor: pointer;
-  font-size: 32px;
-  font-family: 'Inter';
-  font-style: italic;
-  font-weight: 900;
-  color: #645962;
-  background-color: white;
-  animation: openStartButton 1.5s ease;
-  transition: scale ease 0.5s, margin-left ease 0.5s, color ease 0.5s, background-color ease 0.5s;
-}
-
-.startButton p {
-  animation: openButtonDesc 2s ease;
+    opacity: 1;
+    scale: 1.1;
+    transition: scale ease 0.5s, opacity ease 0.5s;
 }
 
 @keyframes openMainText {
-  0% {
-    opacity: 0;
-    transform: translateY(-20vh)
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(-20vh);
+    }
 
-  60% {
-    opacity: 0;
-    transform: translateY(-20vh)
-  }
+    60% {
+        opacity: 0;
+        transform: translateY(-20vh);
+    }
 
-  100% {
-    opacity: 0.7;
-    transform: translateY(0)
-  }
-}
-
-@keyframes openStartButton {
-  0% {
-    opacity: 0;
-    transform: translateY(20vh)
-  }
-
-  60% {
-    opacity: 0;
-    transform: translateY(20vh)
-  }
-
-  100% {
-    opacity: 0.7;
-    transform: translateY(0)
-  }
-}
-
-@keyframes openButtonDesc {
-  0% {
-    opacity: 0;
-    transform: translateY(-3vh)
-  }
-
-  60% {
-    opacity: 0;
-    transform: translateY(-3vh)
-  }
-
-  100% {
-    opacity: 0.7;
-    transform: translateY(0)
-  }
+    100% {
+        opacity: 0.7;
+        transform: translateY(0);
+    }
 }

@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import stylesheet from './Checkbox.module.css';
 
-
-const Checkbox = (props) => {
+const Checkbox = props => {
     const name = props.name;
     const checked = props.checked;
 
     const dispatch = useDispatch();
     const ac = props.ac;
-    const change = (e) => {
+    const change = e => {
         const boolean = e.target.checked;
         dispatch(ac(boolean));
     };

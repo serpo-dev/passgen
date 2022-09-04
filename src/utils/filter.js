@@ -8,8 +8,8 @@ const filter = (options, dictionary) => {
     keys.forEach(key => {
         const boolean = options[key];
         if (boolean) {
-            selection.push(dictionary[key])
-        };
+            selection.push(dictionary[key]);
+        }
     });
     return { selection, length, amount };
 };

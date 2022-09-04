@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 import stylesheet from './Row.module.css';
 import cx from 'classnames';
 
-
-const Row = (props) => {
+const Row = props => {
     const num = props.num;
     const value = props.value;
 
@@ -14,12 +13,14 @@ const Row = (props) => {
         selection.removeAllRanges();
         range.selectNodeContents(row);
         selection.addRange(range);
-        document.execCommand("copy");
+        document.execCommand('copy');
     };
 
     return (
         <div className={stylesheet.row}>
-            <span onClick={select} className={cx(stylesheet.index, 'unselectable')}>
+            <span
+                onClick={select}
+                className={cx(stylesheet.index, 'unselectable')}>
                 {num}
             </span>
             <div className={stylesheet.text} id={`${stylesheet.row}_${num}`}>

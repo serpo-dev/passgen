@@ -5,7 +5,6 @@ import Content from './components/Content';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
-
 function App() {
     return (
         <div>
@@ -15,6 +14,6 @@ function App() {
             <Footer />
         </div>
     );
-};
+}
 
 export default App;

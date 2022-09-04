@@ -1,12 +1,10 @@
-import React from "react";
+import React from 'react';
 import stylesheet from './Preview.module.css';
 
-import mainText from '../assets/mainText.svg'
-
+import mainText from '../assets/mainText.svg';
+import StartButton from './elements/StartButton';
 
 const Preview = () => {
-    const poweredByLink = 'https://github.com/yphwd';
-
     return (
         <div className={stylesheet.preview}>
             <div className={stylesheet.previewBg}>
@@ -16,17 +14,7 @@ const Preview = () => {
                 <div className={stylesheet.mainText}>
                     <img src={mainText} />
                 </div>
-                <div className={stylesheet.startButton}>
-                    <button>
-                        Let's start!
-                    </button>
-                    <p>
-                        powered by
-                        <a href={poweredByLink} target='_blank'>
-                            yphwd
-                        </a>
-                    </p>
-                </div>
+                <StartButton />
             </div>
         </div>
     );
