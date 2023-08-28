@@ -1,26 +1,30 @@
 # Passwords Generator React Redux Toolkit
 
-- Watch **[Live DEMO](https://serpo-dev.github.io/passwords-generator-react-redux-toolkit)**
+### Live Demo
+
+- You can check it out by following **[this link](https://serpo-dev.github.io/passwords-generator-react-redux-toolkit)** 🔗 :
+
+`https://serpo-dev.github.io/passwords-generator-react-redux-toolkit`
 
 
 ### Demo Screenshots
 
 ![Demo Interaction (GIF)](assets/demo.gif)
 
-#### Desktop
+#### Desktop 🖥️
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-    <img src="assets/demo_desktop_1.jpg" width="200" style="margin: 5px;">
-    <img src="assets/demo_desktop_2.jpg" width="200" style="margin: 5px;">
-    <img src="assets/demo_desktop_3.jpg" width="200" style="margin: 5px;">
-    <img src="assets/demo_desktop_4.jpg" width="200" style="margin: 5px;">
+    <img src="assets/demo_desktop_1.jpg" height="120" style="margin: 5px;">
+    <img src="assets/demo_desktop_2.jpg" height="120" style="margin: 5px;">
+    <img src="assets/demo_desktop_3.jpg" height="120" style="margin: 5px;">
+    <img src="assets/demo_desktop_4.jpg" height="120" style="margin: 5px;">
 </div>
 
-#### Mobile
+#### Mobile 📱
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-    <img src="assets/demo_mobile_1.jpg" width="200" style="margin: 5px;">
-    <img src="assets/demo_mobile_2 .jpg" width="200" style="margin: 5px;">
+    <img src="assets/demo_mobile_1.jpg" height="120" style="margin: 5px;">
+    <img src="assets/demo_mobile_2.jpg" height="120" style="margin: 5px;">
 </div>
 
 ## Usage
