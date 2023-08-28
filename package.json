@@ -15,7 +15,7 @@
     "homepage": "https://serpo-dev.github.io/passwords-generator-react-redux-toolkit",
     "scripts": {
         "start": "react-scripts start",
-        "predeploy": "npm run build",
+        "predeploy": "react-scripts build",
         "deploy": "gh-pages -d build",
         "eject": "react-scripts eject",
         "format": "prettier -w ./src/"
