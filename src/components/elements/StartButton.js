@@ -2,7 +2,7 @@ import React from 'react';
 import stylesheet from './StartButton.module.css';
 
 const StartButton = () => {
-    const poweredByLink = 'https://github.com/yphwd';
+    const poweredByLink = 'https://github.com/serpo-dev';
     const click = () => {
         const contentBlock = document.querySelector('#content');
         contentBlock.scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +14,7 @@ const StartButton = () => {
             <p>
                 powered by
                 <a href={poweredByLink} target='_blank'>
-                    yphwd
+                    serpo-dev
                 </a>
             </p>
         </div>

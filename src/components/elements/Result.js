@@ -5,7 +5,6 @@ import Row from './Row';
 
 const Result = () => {
     const result = useSelector(state => state.result.value);
-    console.log(result);
     const isResult = result.length !== 0;
 
     let rows = null;
