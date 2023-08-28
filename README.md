@@ -2,7 +2,7 @@
 
 ### Live Demo
 
-- You can check it out by following **<a href="https://serpo-dev.github.io/passwords-generator-react-redux-toolkit" target="_blank">this link</a>** 🔗 :
+- You can check it out by following <b><a href="https://serpo-dev.github.io/passwords-generator-react-redux-toolkit" target="_blank">this link</a></b> 🔗 :
 
 `https://serpo-dev.github.io/passwords-generator-react-redux-toolkit`
 
