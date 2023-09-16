@@ -1,6 +1,6 @@
 # PassGen
 
-A Passwords Generator Based On React & Redux Toolkit
+Password Generator Based On React & Redux Toolkit
 
 ### Live Demo
 
