@@ -12,7 +12,7 @@
         "redux": "^4.2.0",
         "sass": "^1.54.8"
     },
-    "homepage": "https://serpo-dev.github.io/passwords-generator-react-redux-toolkit",
+    "homepage": "https://serpo-dev.github.io/passgen",
     "scripts": {
         "start": "react-scripts start",
         "predeploy": "react-scripts build",
