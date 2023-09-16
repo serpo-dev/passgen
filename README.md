@@ -4,7 +4,7 @@ A Passwords Generator Based On React & Redux Toolkit
 
 ### Live Demo
 
-- You can check it out by following <b><a href="https://serpo-dev.github.io/PassGen" target="_blank">this link</a></b> 🔗 :
+- You can check it out by following <b><a href="https://serpo-dev.github.io/passgen" target="_blank">this link</a></b> 🔗 :
 
 `https://serpo-dev.github.io/passwords-generator-react-redux-toolkit`
 
